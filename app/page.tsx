@@ -11,9 +11,9 @@ export default async function Page() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-start p-24">
+    <main className="flex min-h-screen flex-col items-start p-8">
       <div className="mb-4">
-        <Link href="/posts/create" className="bg-white px-4 py-2 rounded">
+        <Link href="/posts/create" className="btn">
           Create Post
         </Link>
       </div>
@@ -33,12 +33,12 @@ export default async function Page() {
                   </h2>
                 </Link>
 
-                <p className={`m-0 max-w-[30ch] text-sm opacity-60`}>
+                <p className={`m-0 max-w-[30ch] text-sm opacity-80`}>
                   {post.content}
                 </p>
               </div>
 
-              <div className="text-sm opacity-30">
+              <div className="text-sm opacity-50">
                 {"Updated at " +
                   post.updatedAt.toLocaleDateString("en-US", dateOptions)}
               </div>
